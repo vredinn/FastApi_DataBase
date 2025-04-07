@@ -4,4 +4,6 @@
 
 Установка `pip install -r requirements.txt`
 
-Сделать посев `py seed.py`
+Выполнить посев `py seed.py`
+
+Запустить FastApi `fastapi dev main.py`
