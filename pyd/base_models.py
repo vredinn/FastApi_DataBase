@@ -7,3 +7,8 @@ class BaseBook(BaseModel):
     author: str = Field(example="Иванов И.И.")
     year: int = Field(example=2023)
     genre: str = Field(example="Фантастика")
+
+
+class BaseProduct(BaseModel):
+    id: int = Field(example=1)
+    name: str = Field(example="Молоко")

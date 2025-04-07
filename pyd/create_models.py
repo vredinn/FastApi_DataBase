@@ -6,3 +6,7 @@ class CreateBook(BaseModel):
     author: str = Field(min_length=3, max_length=255, example="Иванов И.И.")
     year: int = Field(gt=1000, lt=2026, example=2023)
     genre: str = Field(min_length=3, max_length=255, example="Фантастика")
+
+
+class CreateProduct(BaseModel):
+    name: str = Field(min_length=3, max_length=255, example="Молоко")

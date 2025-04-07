@@ -10,3 +10,10 @@ class Book(Base):
     author = Column(String(255))
     year = Column(Integer)
     genre = Column(String(255))
+
+
+class Product(Base):
+    __tablename__ = "products"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    name = Column(String(255), unique=True)
